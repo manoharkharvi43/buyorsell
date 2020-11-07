@@ -8,6 +8,7 @@ import { useDispatch } from 'react-redux'
 import add_cart from '../redux/actions/show_more_action'
 
 
+
 function Allpost() {
    
    const dispatch = useDispatch()
