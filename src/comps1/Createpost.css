@@ -1,0 +1,52 @@
+.post-cont{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.inputs{
+   padding: 10px 8px;
+   margin: 10px;
+   border: 3px solid rgb(202, 179, 179);
+   border-radius: 10px;
+   width: 30%;
+   outline: none;
+}
+
+.inputs:focus{
+    background-color: rgb(180, 201, 214);
+    
+    border-radius: 20px;
+}
+
+.filechoose{
+    border: 2px solid rgb(182, 229, 233);
+    border-radius: 10px;
+    outline: none;
+  
+}
+.button1{
+    margin: 10px;
+    width: 20%;
+    padding: 7px 8px;
+    background-image: linear-gradient(to right, rgb(20, 141, 240) , rgb(11, 116, 236));
+    border-radius: 10px;
+    outline: none;
+}
+
+
+@media only screen and (max-width:1400px){
+    .inputs{
+        width: 80%;
+    }
+    .button1{
+        width: 50%;
+    }
+    .button1:focus{
+       color: rgb(8, 62, 143);
+       outline: none;
+    }
+}
+

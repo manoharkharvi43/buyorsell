@@ -1,0 +1,29 @@
+.setting-container{
+    border-bottom: 2px solid grey;
+    margin-bottom:10px;
+    padding: 10px;
+}
+.setting-your-items{
+    border-bottom: 2px solid grey;
+    text-decoration: none;
+    text-underline-offset: none;
+}
+.setting-your-items1{
+    border-bottom: 2px solid grey;
+    text-decoration: none;
+    text-underline-offset: none;
+    cursor: pointer;
+}
+.log-out-btn{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+#btn-btn{
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
