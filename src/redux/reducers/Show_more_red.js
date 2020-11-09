@@ -9,9 +9,9 @@ const SHOW_MORE = (state=initialstate,{type,payload})=>{
 
      case 'SHOW_MORE': 
                     if (state===void 0){
-                        return{
+                        return[
                             ...state
-                        }
+                        ]
                     }
                     else
                    return [
@@ -25,9 +25,9 @@ const SHOW_MORE = (state=initialstate,{type,payload})=>{
                break
       
      case 'DEL_CART':
-             const del_item=state.filter((post) => post.img!==payload.img)
+             const del_item=state.filter((post) => post.post.img!==payload.img)
              return [
-               ...del_item
+                 ...del_item
              ]
  }
 }
