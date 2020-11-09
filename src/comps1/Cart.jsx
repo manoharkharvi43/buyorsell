@@ -17,7 +17,7 @@ console.log('cart',cart_data)
 
 const card_data = (data) =>{
     dispatch(del_cart(data))
-    // console.log(data)
+    console.log(data)
 }
     return (
         <div className='cart_container'>
