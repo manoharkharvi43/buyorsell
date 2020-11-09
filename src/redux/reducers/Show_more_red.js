@@ -2,6 +2,8 @@ import fire from '../../comps1/fire'
 
 const initialstate =[]
 
+
+
 const SHOW_MORE = (state=initialstate,{type,payload})=>{
  switch(type){
 
