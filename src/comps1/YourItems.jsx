@@ -11,12 +11,7 @@ function YourItems() {
     const [ loader ,set_loader ] = useState(false)
     const [ delete_Items ,set_delete_Items] = useState([])
    const [ search , setsearch] = useState('')
- 
-
-
-    
-  
-
+   
      const showitems = async () =>{
          await fire.firestore().collection('allitems').get().then( (datas) =>{
            const tempdata = []

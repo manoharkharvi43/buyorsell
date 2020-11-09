@@ -1,6 +1,6 @@
 const { useSelector } = require("react-redux")
 
-const initialstate = []
+const initialstate = [...data]
 
 
 const data = useSelector(state => state.SHOW_MORE)
