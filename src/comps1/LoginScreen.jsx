@@ -5,7 +5,6 @@ import './LoginScreen.css'
 function LoginScreen(props) {
     const ref = useContext(errorval)
     const {email,setemail,password, setpassword ,authsignin ,togglelogin} = props
- const[pass_show  , setpass_show]= useState('password')
     const [ toggle , settoggle] = useState(false)
 
 
@@ -13,12 +12,9 @@ function LoginScreen(props) {
         settoggle(!toggle)
     }
 
-    const passshow =()=>{
-setpass_show('text')
-
+    const pass_show = () =>{
+        
     }
-
-
     return (
         <div className="login-container">
 
@@ -29,13 +25,22 @@ setpass_show('text')
                 </div>
 
 
-              <div className="input-container">
-                  <input className="login-input-container" type='text' placeholder="email"  name="email" value={email} onChange={(e) =>setemail(e.target.value) }/>
+              <div className="input-container2">
+                  <input className="login-input-container" 
+                  type='text'
+                   placeholder="email" 
+                    name="email" 
+                    value={email} 
+                    onChange={(e) =>setemail(e.target.value) }/>
              </div>
 
                   <div className="input-container2">
-                  <input className="login-input-container" placeholder="password" type={pass_show} name="password" value={password} onChange={(e) =>setpassword(e.target.value)}  />
-                  <button onClick={passshow}>password-show</button>
+                  <input className="login-input-container"
+                   placeholder="password" type={pass_show}
+                    name="password" value={password}
+                     onChange={(e) =>setpassword(e.target.value)} 
+                      />
+                  
                   </div>
                  
                 {toggle ?    <div className="login-btn-container">

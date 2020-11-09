@@ -13,6 +13,7 @@ const SHOW_MORE = (state=initialstate,{type,payload})=>{
                     // }
                     // else
             // { const additem= state.filter(post => post.post.img !== payload.post.img)
+              const additem= state.filter(post=> post.post.img !==payload.post.img)
                    return [
                        ...state,
                       {post: payload}
