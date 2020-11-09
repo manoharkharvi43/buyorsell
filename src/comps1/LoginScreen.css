@@ -1,5 +1,5 @@
 .login-container{
-    background-image: linear-gradient(to bottom right, rgb(181, 42, 236), rgb(94, 27, 219));
+    background-image: linear-gradient(to bottom right, rgb(98, 187, 228), rgb(170, 144, 218));
      height:100vh;
      display: flex;
      justify-content: center;
@@ -18,7 +18,7 @@
 .login-container1{
     width: 40%;
     height: 60%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(161, 202, 226);
     padding-left: 10%;
     border-radius: 10px;
   

@@ -16,7 +16,7 @@ function Homepage(props) {
            <div className="home-container">
                <div className='margin_container'> 
                <div className='header'>
-            <h3>BuyOrSale</h3>
+            <h3>BuyOrSell</h3>
                </div>
                <div className="log-out-container">    
               <Link to="/cart" className="icon-div"><GrCart className="cart-icon"  /></Link> 

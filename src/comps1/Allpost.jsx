@@ -24,7 +24,7 @@ const items = () =>{
        posteddata.push({...alldocs.data()})
       setpostitems([...posteddata])
     })
-    } );
+    });
   };
  
   
@@ -34,7 +34,6 @@ dispatch(add_cart(data))
 //  setInterval(() => {
 //   set_cart_popup(true)
 //  }, 10000);
-
   }
 
 
@@ -56,7 +55,6 @@ useEffect(() =>{
             ).map(datas =>  
               datas ?
             <>
-
             <Card className='card-name' title={datas.name} key={datas.id} description={datas.description}  imgsrc={datas.img} date_time={datas.date_time} showmore={()=>showmore(datas) } btn_name='Add to Cart' />
             </> :null      
             )
