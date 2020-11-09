@@ -24,9 +24,13 @@ const SHOW_MORE = (state=initialstate,{type,payload})=>{
               fire.auth().signOut()
                break
       
-}           
+     case 'DEL_CART':
+             const del_item=state.filter((post) => post.img!==payload.img)
+             return [
+               ...del_item
+             ]
  }
-
+}
 
 
 export default SHOW_MORE
