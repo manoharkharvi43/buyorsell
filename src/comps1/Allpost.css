@@ -18,7 +18,7 @@
 .div-container{
     display: flex;
    background-color: rgb(255, 255, 255);
-    width: 50%;
+    width: 47%;
     height: 100%;
     justify-content: space-between;
     flex-direction: row;
@@ -68,7 +68,7 @@
     }
     .div-container{
         
-        width: 100%;
+        width: 90%;
         height: 100%;
         justify-content:flex-start;
         flex-direction: row;

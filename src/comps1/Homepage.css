@@ -18,16 +18,18 @@ html{
      display: flex;
      justify-content: space-between;
      background-color: oldlace;
-
+  
 }
 .margin_container{
      margin: 0px;
      display: flex;
      flex-direction: row;
      justify-content: space-between;
+     width: 100%;
 
 }
 .header{
+     display: flex;
      justify-content: center;
      align-items: center;
 }
@@ -57,7 +59,13 @@ html{
       width: 60px;
     justify-content: center;
     align-items: center;
+    padding: 0px;
+    position: relative;
    
+}
+.cart_number{
+position: absolute;
+right: 40px;
 }
 
 .cart-icon{
@@ -73,9 +81,28 @@ html{
      background-color: rgba(219, 219, 219,0.5);
 }
 
+
+@media only screen  and (max-width:400px){
+     .log-out-container{
+          padding: 20px;
+     }
+  .margin_container{
+     margin: 0px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: 100%;
+  }
+  
+  }
 @media only screen  and (max-width:600px){
    .log-out-container{
         padding: 20px;
    }
+.margin_container{
+     display: flex;
+     justify-content: center;
+     width: 100%;
+}
 
 }

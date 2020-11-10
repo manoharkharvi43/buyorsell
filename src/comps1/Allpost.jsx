@@ -49,11 +49,13 @@ const items = () =>{
            <input type='text' placeholder='search' className='search-input'value={search}  onChange={(e) => setsearch(e.target.value)} ></input>
          <div className='div-container'> 
             {  postitems.filter(data =>
-              data.name.toLowerCase().includes(search.toLowerCase())
+             ( data.name.toLowerCase().includes(search.toLowerCase()))||
+             ( data.description.toLowerCase().includes(search.toLowerCase()))
             ).map(datas =>  
-              datas ?
+              datas.length===0 ?<h3>no results found</h3>:
             <>
             <Card className='card-name'
+            key={datas.length}
              title={datas.name}
               key={datas.id}
               description={datas.description} 
@@ -61,7 +63,7 @@ const items = () =>{
                date_time={datas.date_time}
                showmore={()=>showmore(datas) }
                btn_name='Add to Cart' />
-            </> :null      
+            </>     
             )
             }
 

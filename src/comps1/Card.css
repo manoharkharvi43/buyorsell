@@ -54,7 +54,7 @@ img{
         grid-template-rows: 1fr 0.2fr 50%fr;
     }
     img{
-        width: 300px;
+        width: 240px;
         height: 150px;
     }
     .content{

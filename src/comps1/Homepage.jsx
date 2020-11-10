@@ -22,16 +22,21 @@ function Homepage(props) {
        <>
            <div className="home-container">
                <div className='margin_container'> 
-               <div className='header'>
-            <h3>BuyOrSell</h3>
-               </div>
-               <div className="log-out-container">   
-               <span class="badge badge-light">{cart_number? cart_number.length!==0 ? cart_number.length:null:null}</span> 
-            <Link to="/cart" className="icon-div"><GrCart className="cart-icon"  /></Link> 
-               </div>
+               
+                   <div className='header'>
+                      <h3>BuyOrSell</h3>
+                   </div>
+                    <div className="log-out-container">   
+                       <span className="badge badge-success" 
+                         id='cart_number'>
+                        {cart_number? cart_number.length!==0 ? cart_number.length:null:null}
+                        </span> 
+                         <Link to="/cart" className="icon-div">
+                             <GrCart className="cart-icon"  /></Link> 
+                    </div>
                </div>
 
-           <div className="button-container">
+           <div className="button-container" >
              <Link to="/">  <button type="button" className="all_post_btn" id='allpost_id' >All-items</button></Link> 
              <Link to="/sellitems"> <button type="button" className="all_post_btn" >Sell-items</button></Link>   
               <Link to="/settings">  <button type="button" className="all_post_btn" >setting</button></Link>
