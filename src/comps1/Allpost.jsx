@@ -28,20 +28,18 @@ const items = () =>{
   };
  
   
-  const showmore = (data) =>{
-console.log(data)
-dispatch(add_cart(data))
-//  setInterval(() => {
-//   set_cart_popup(true)
-//  }, 10000);
-  }
+          const showmore = (data) =>{
+        console.log(data)
+        dispatch(add_cart(data))
+
+          }
 
 
 
-useEffect(() =>{
-   items()
-  
-})
+          useEffect(() =>{
+            items()
+            
+          })
 
 
     return (
@@ -55,7 +53,14 @@ useEffect(() =>{
             ).map(datas =>  
               datas ?
             <>
-            <Card className='card-name' title={datas.name} key={datas.id} description={datas.description}  imgsrc={datas.img} date_time={datas.date_time} showmore={()=>showmore(datas) } btn_name='Add to Cart' />
+            <Card className='card-name'
+             title={datas.name}
+              key={datas.id}
+              description={datas.description} 
+              imgsrc={datas.img}
+               date_time={datas.date_time}
+               showmore={()=>showmore(datas) }
+               btn_name='Add to Cart' />
             </> :null      
             )
             }

@@ -12,9 +12,7 @@ function LoginScreen(props) {
         settoggle(!toggle)
     }
 
-    const pass_show = () =>{
-        
-    }
+   
     return (
         <div className="login-container">
 
@@ -36,7 +34,7 @@ function LoginScreen(props) {
 
                   <div className="input-container2">
                   <input className="login-input-container"
-                   placeholder="password" type={pass_show}
+                   placeholder="password" type='password'
                     name="password" value={password}
                      onChange={(e) =>setpassword(e.target.value)} 
                       />

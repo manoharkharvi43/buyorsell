@@ -85,3 +85,36 @@
        
 
 }
+@media only screen and (max-width:00px){
+    .login-container1{
+        width: 90%;
+        height: 70%;
+        padding: 0px;
+    }
+    .input-container{
+       float: left;
+       margin-left: 15%;
+
+       }
+    .input-container2{
+        float: left;
+       margin-left: 10%;
+       width: 80%;
+
+    }   
+    .login-input-container{
+           padding: 8px 10px;
+        width: 100%;
+        border-radius: 10px;
+        outline: none;
+    
+    }
+    .input-login{
+       margin-top: 10%;
+       margin-left: 15%;
+       width: 70%;
+       outline: none;
+    }
+       
+
+}

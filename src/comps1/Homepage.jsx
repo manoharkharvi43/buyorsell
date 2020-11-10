@@ -8,9 +8,16 @@ import {GrCart} from 'react-icons/gr'
 import Cart from './Cart'
 import YourItems from './YourItems'
 import ShowMore from './ShowMore'
+import { useSelector } from 'react-redux'
 
 
 function Homepage(props) {
+
+
+    const cart_number = useSelector(state=>state)
+      if(cart_number){
+          console.log('cart_no',cart_number.length)
+      }
     return (
        <>
            <div className="home-container">
@@ -18,8 +25,9 @@ function Homepage(props) {
                <div className='header'>
             <h3>BuyOrSell</h3>
                </div>
-               <div className="log-out-container">    
-              <Link to="/cart" className="icon-div"><GrCart className="cart-icon"  /></Link> 
+               <div className="log-out-container">   
+               <span class="badge badge-light">{cart_number? cart_number.length!==0 ? cart_number.length:null:null}</span> 
+            <Link to="/cart" className="icon-div"><GrCart className="cart-icon"  /></Link> 
                </div>
                </div>
 

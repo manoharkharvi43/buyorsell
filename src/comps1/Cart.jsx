@@ -23,7 +23,7 @@ const card_data = (data) =>{
         <div className='cart_container'>
             
            <div className="item_container">
-            { (!cart_data)  ? <h3> your cart is empty</h3> : cart_data.map( datas =>
+            {cart_data ? (cart_data.length===0)  ? <h3> your cart is empty</h3> : cart_data.map( datas =>
                  <>
                    <Card className='card-name'
                     title={datas.post.name} 
@@ -34,7 +34,7 @@ const card_data = (data) =>{
                     showmore={()=>card_data(datas)}
                       btn_name='Remove  from Cart' />
              </>
-             )}  
+             ):<h3>your cart is empty</h3>}  
 
            </div>
         </div>
