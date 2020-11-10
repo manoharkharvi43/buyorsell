@@ -14,10 +14,12 @@
   height: 100%;
 }
 .card_container{
-  width: 60%;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  
 }
 
 @media only screen and (max-width:600px) {

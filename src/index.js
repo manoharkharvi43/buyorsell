@@ -7,9 +7,9 @@ import {combineReducers, createStore} from 'redux'
 import {Provider} from 'react-redux'
 // import combined_reducers from './redux/store/store'
 // import logoutreducer from './redux/reducers/Logout_reducer'
-import  SHOW_MORE from './redux/reducers/All_Reducer'
+import  All_Reducer from './redux/reducers/All_Reducer'
 
-const store = createStore(SHOW_MORE)
+const store = createStore(All_Reducer)
 
 ReactDOM.render(
   <>

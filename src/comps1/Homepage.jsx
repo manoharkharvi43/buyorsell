@@ -22,7 +22,6 @@ function Homepage(props) {
        <>
            <div className="home-container">
                <div className='margin_container'> 
-               
                    <div className='header'>
                       <h3>BuyOrSell</h3>
                    </div>

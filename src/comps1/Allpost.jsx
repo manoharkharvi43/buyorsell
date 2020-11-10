@@ -5,7 +5,7 @@ import fire from './fire'
 import {db} from './fire'
 import './Allpost.css'
 import { useDispatch } from 'react-redux'
-import add_cart from '../redux/actions/show_more_action'
+import add_cart from '../redux/actions/add_cart_action'
 
 
 
@@ -29,9 +29,9 @@ const items = () =>{
  
   
           const showmore = (data) =>{
-        console.log(data)
+       
         dispatch(add_cart(data))
-
+        alert(data)
           }
 
 
@@ -49,10 +49,11 @@ const items = () =>{
            <input type='text' placeholder='search' className='search-input'value={search}  onChange={(e) => setsearch(e.target.value)} ></input>
          <div className='div-container'> 
             {  postitems.filter(data =>
+            data ?
              ( data.name.toLowerCase().includes(search.toLowerCase()))||
              ( data.description.toLowerCase().includes(search.toLowerCase()))
-            ).map(datas =>  
-              datas.length===0 ?<h3>no results found</h3>:
+             :null
+            ).map(datas => 
             <>
             <Card className='card-name'
             key={datas.length}
@@ -63,10 +64,9 @@ const items = () =>{
                date_time={datas.date_time}
                showmore={()=>showmore(datas) }
                btn_name='Add to Cart' />
-            </>     
-            )
-            }
-
+            </>  )   
+            
+}
         </div>
                 
             {  cart_popup ? <div className='pop_over'>

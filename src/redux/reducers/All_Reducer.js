@@ -2,21 +2,14 @@ import fire from '../../comps1/fire'
 
 const initialstate =[]
 
-const SHOW_MORE = (state=initialstate,{type,payload})=>{
+const All_Reducer = (state=initialstate,{type,payload})=>{
  switch(type){
 
-     case 'SHOW_MORE': 
-                    // if (state===void 0){
-                    //     return[
-                    //         ...state
-                    //     ]
-                    // }
-                    // else
+     case 'ADD_CART': 
                    return [
                        ...state,
                       {post: payload}
-                   ]
-                // }
+                   ];
                   break
      case 'LOG_OUT':  
               fire.auth().signOut()
@@ -31,4 +24,4 @@ const SHOW_MORE = (state=initialstate,{type,payload})=>{
 }
 
 
-export default SHOW_MORE
+export default All_Reducer

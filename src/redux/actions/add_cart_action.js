@@ -1,6 +1,6 @@
 const add_cart = (payload) =>{
     return {
-  type:'SHOW_MORE',
+  type:'ADD_CART',
   payload:payload
     }
 }

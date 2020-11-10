@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useHistory } from "react-router-dom";
 import {useDispatch} from 'react-redux'
-import showmore from '../redux/actions/show_more_action'
+import showmore from '../redux/actions/add_cart_action'
 
 import './Card.css'
 function Card(props) {
