@@ -6,11 +6,22 @@ const All_Reducer = (state=initialstate,{type,payload})=>{
  switch(type){
 
      case 'ADD_CART': 
-                   return [
-                       ...state,
-                      {post: payload}
-                   ];
-                  break
+             if(state !== [])
+             {
+                 const cart_data = state.filter(data=>data.post.img !== payload.img)
+                 if(cart_data){
+                     return [
+                         ...state,
+                        {post: payload}
+                     ];
+                 }
+             }
+             else {
+                 return [
+                     ...state
+                 ]
+             }
+        
      case 'LOG_OUT':  
               fire.auth().signOut()
                break
@@ -18,6 +29,7 @@ const All_Reducer = (state=initialstate,{type,payload})=>{
      case 'DEL_CART':
              const del_item=state.filter((post) => post.post.img!==payload.post.img)
              return [
+
                  ...del_item
              ]
  }

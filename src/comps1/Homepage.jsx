@@ -1,13 +1,12 @@
-import React, { useEffect ,useRef,useState} from 'react'
+import React  from 'react'
 import './Homepage.css'
 import Createpost from './Createpost'
-import {Link , Redirect, Route , Switch } from 'react-router-dom'
+import {Link , Route , Switch } from 'react-router-dom'
 import Allpost from './Allpost'
 import Settings from './Settings'
 import {GrCart} from 'react-icons/gr'
 import Cart from './Cart'
 import YourItems from './YourItems'
-import ShowMore from './ShowMore'
 import { useSelector } from 'react-redux'
 
 
@@ -47,7 +46,6 @@ function Homepage(props) {
                <Route path="/settings"><Settings/></Route>
                <Route path="/cart" component={Cart}></Route>
                <Route path='/youritems' component={YourItems}></Route>
-               <Route path='/showmore' component={ShowMore}></Route>
            </Switch>
 
            </div>

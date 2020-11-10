@@ -31,11 +31,6 @@ history.push('/youritems')
         <div className='log-out-btn'>
                  <button className='btn btn-outline-secondary' id='btn-btn' onClick={() =>{dispatch(LOGOUT())}}>log-out</button>
         </div>
-
-     
-
-     
-       
         </div>
     )
 }

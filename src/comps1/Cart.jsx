@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 import del_cart from '../redux/actions/delete_cart_action'
-import SHOW_MORE from '../redux/reducers/All_Reducer'
 import Card from './Card'
 import './Cart.css'
 

@@ -1,7 +1,6 @@
 import React, {  useEffect, useState } from 'react'
 import { values } from '../App'
 import Card from './Card'
-import fire from './fire'
 import {db} from './fire'
 import './Allpost.css'
 import { useDispatch } from 'react-redux'
@@ -26,21 +25,15 @@ const items = () =>{
     })
     });
   };
- 
-  
           const showmore = (data) =>{
-       
-        dispatch(add_cart(data))
-        alert(data)
+                dispatch(add_cart(data))
           }
-
 
 
           useEffect(() =>{
             items()
             
           })
-
 
     return (
       <>
@@ -49,20 +42,18 @@ const items = () =>{
            <input type='text' placeholder='search' className='search-input'value={search}  onChange={(e) => setsearch(e.target.value)} ></input>
          <div className='div-container'> 
             {  postitems.filter(data =>
-            data ?
-             ( data.name.toLowerCase().includes(search.toLowerCase()))||
+          
+             ( data.name.toLowerCase().includes(search.toLowerCase())) ||
              ( data.description.toLowerCase().includes(search.toLowerCase()))
-             :null
-            ).map(datas => 
+            ).map((datas) => 
             <>
             <Card className='card-name'
-            key={datas.length}
              title={datas.name}
               key={datas.id}
               description={datas.description} 
               imgsrc={datas.img}
                date_time={datas.date_time}
-               showmore={()=>showmore(datas) }
+               showmore={()=>showmore(datas)}
                btn_name='Add to Cart' />
             </>  )   
             

@@ -28,11 +28,6 @@ img{
     height: 200px;
 }
 
-/* .text-container{
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-start
-} */
 .title{
   padding: 0px;
   grid-row: 2/3;

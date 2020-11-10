@@ -1,21 +1,17 @@
-import React, { useState } from 'react'
-import { useHistory } from "react-router-dom";
-import {useDispatch} from 'react-redux'
-import showmore from '../redux/actions/add_cart_action'
-
+import React from 'react'
 import './Card.css'
+
+
+
+
 function Card(props) {
-    const dispatch = useDispatch()
+  
     const {imgsrc , title , description , date_time,showmore,btn_name} = props
   
-    let history = useHistory();
+ 
 
     const showmore_item = () =>{
-        // history.push('/showmore');
-        // // dispatch(showmore())
-        // alert('hello')
-        showmore();
-          
+        showmore();      
     }
 
    
