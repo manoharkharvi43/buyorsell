@@ -16,8 +16,6 @@ ReactDOM.render(
   <Provider store={store}>
   <BrowserRouter>
   <App/>
-  {/* <Card/> */}
-  
   </BrowserRouter>
   </Provider>
   </>,

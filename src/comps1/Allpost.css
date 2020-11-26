@@ -18,13 +18,11 @@
 .div-container{
     display: flex;
    background-color: rgb(255, 255, 255);
-    width: 47%;
+    width: 50%;
     height: 100%;
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-
-
 }
 
 .search-input{

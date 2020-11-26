@@ -7,15 +7,20 @@
     margin: 20px;
      padding: 0px;
     background-color: rgb(255, 255, 255);
-  
     border: 1px solid rgb(230, 202, 202);
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 1fr 0.2fr 50%;
+    grid-template-rows:90% 10%;
     width:300px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
    
+}
+.click_container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 0.2fr 50%;
+    width:300px;
 }
 
 .img-container{
