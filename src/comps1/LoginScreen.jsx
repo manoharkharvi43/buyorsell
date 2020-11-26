@@ -22,7 +22,7 @@ function LoginScreen(props) {
 
             <div className='login-container1'>
                 <div className="error-container">
-    <p className="login-error">{ref}</p>
+            <p className="login-error">{ref}</p>
                 </div>
 
 

@@ -9,7 +9,6 @@
 }
 .login-input-container{
     padding: 8px 10px;
-  
  width: 60%;
  border-radius: 10px;
  outline: none;
@@ -21,8 +20,6 @@
     background-color: rgb(161, 202, 226);
     padding-left: 10%;
     border-radius: 10px;
-  
-   
 }
 
 .input-container{
@@ -50,7 +47,12 @@
     color: red;
 }
 
-
+.error_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightslategray;
+}
 
 @media only screen and (max-width:600px){
     .login-container1{

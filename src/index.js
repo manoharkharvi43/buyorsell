@@ -8,6 +8,7 @@ import {Provider} from 'react-redux'
 // import combined_reducers from './redux/store/store'
 // import logoutreducer from './redux/reducers/Logout_reducer'
 import  All_Reducer from './redux/reducers/All_Reducer'
+// import store from '../src/redux/store/store'
 
 const store = createStore(All_Reducer)
 
