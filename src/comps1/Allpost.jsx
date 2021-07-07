@@ -36,8 +36,7 @@ function Allpost() {
   };
   useEffect(() => {
     items();
-   
-  });
+  } , []);
 
   return (
     <>
@@ -49,8 +48,10 @@ function Allpost() {
           value={search}
           onChange={(e) => setsearch(e.target.value)}
         ></input>
-        <div className="div-container">
-          {postitems
+        <div className="div-container"  style={{
+          width:"100%"
+        }}>
+          {postitems && postitems
             .filter(
               (data) =>
                 data.name.includes(search) || data.description.includes(search)

@@ -59,7 +59,7 @@ function App() {
       } else {
         setuser("");
       }
-
+console.log(user , 'user ===>');
       if (user) {
         setuserdetails({
           ...userdetails,

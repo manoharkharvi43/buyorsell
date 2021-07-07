@@ -9,9 +9,7 @@ function Cart() {
   const dispatch = useDispatch();
   const history = useHistory();
   const cart_data = useSelector((state) => state);
-  useEffect(() => {
-    console.log("cart", cart_data);
-  });
+
   const showitemdetails = () => {
     history.push("/items");
   };

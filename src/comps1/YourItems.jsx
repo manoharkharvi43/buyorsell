@@ -62,7 +62,7 @@ function YourItems() {
       ></input>
 
       <div className="card_container">
-        {youritems
+        {youritems && youritems
           .filter(
             (data) =>
               data.username === val.email &&
@@ -81,7 +81,10 @@ function YourItems() {
               id={datas.id}
             />
           ))}
+  
+          
       </div>
+
     </div>
   );
 }

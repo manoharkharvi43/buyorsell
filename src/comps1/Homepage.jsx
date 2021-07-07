@@ -51,12 +51,6 @@ function Homepage(props) {
            </Switch>
 
            </div>
-
-
-
-
-
-   
          </>
         
       
